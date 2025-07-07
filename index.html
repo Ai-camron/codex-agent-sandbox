@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebastian Co. – E-Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Exo 2', sans-serif;
+            background-color: #0A0A11;
+            color: #E8E8E8;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #141A1F;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 180px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-weight: 800;
+            color: #03F7C4;
+            font-size: 48px;
+            margin: 20px 0;
+        }
+        .cta {
+            background-color: #03F7C4;
+            color: #0A0A11;
+            padding: 10px 30px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        nav {
+            background-color: #0A0A11;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #E8E8E8;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        nav a:hover {
+            color: #03F7C4;
+        }
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            padding: 60px 20px;
+            background-color: #141A1F;
+        }
+        .category-tile {
+            background-color: #07816B;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .featured-section {
+            padding: 60px 20px;
+            background-color: #0A0A11;
+        }
+        .featured-section h2 {
+            color: #F9B12C;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .product-row {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        .product-card {
+            background-color: #141A1F;
+            padding: 20px;
+            min-width: 200px;
+            border: 1px solid #03F7C4;
+        }
+        .about-section {
+            background-color: #141A1F;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .about-section h2 {
+            color: #03F7C4;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .quote-block {
+            background-color: #4D402B;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-style: italic;
+        }
+        .testimonial-section {
+            background-color: #141A1F;
+            padding: 60px 20px;
+        }
+        .testimonial-section h2 {
+            text-align: center;
+            color: #F9B12C;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            background-color: #0A0A11;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border: 1px solid #03F7C4;
+        }
+        .email-signup {
+            background-color: #141A1F;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .email-signup input {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            width: 250px;
+        }
+        .email-signup button {
+            padding: 10px 20px;
+            background-color: #03F7C4;
+            color: #0A0A11;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0A0A11;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="cebastianco_name_mark_logo_gold.jpeg" alt="Cebastian Co. Logo">
+    <h1>New Drops, No Excuses</h1>
+    <button class="cta">Shop The Hype</button>
+</header>
+
+<nav>
+    <a href="#categories">Categories</a>
+    <a href="#featured">Featured</a>
+    <a href="#about">About</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#newsletter">Newsletter</a>
+</nav>
+
+<section class="hero">
+    <p>Welcome to Cebastian Co., the home of limited streetwear drops. Elevate your style with exclusive pieces crafted to turn heads.</p>
+</section>
+
+<section id="categories" class="category-grid">
+    <div class="category-tile">Hoodies</div>
+    <div class="category-tile">Tees</div>
+    <div class="category-tile">Accessories</div>
+    <div class="category-tile">Limited</div>
+    <div class="category-tile">Sale</div>
+    <div class="category-tile">Lookbook</div>
+</section>
+
+<section id="featured" class="featured-section">
+    <h2>Featured Drops</h2>
+    <div class="product-row">
+        <div class="product-card">Product 1</div>
+        <div class="product-card">Product 2</div>
+        <div class="product-card">Product 3</div>
+        <div class="product-card">Product 4</div>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <h2>Our Story</h2>
+    <p>Born from a love of music and street culture, Cebastian Co. brings bold designs that speak volumes. Each drop is crafted in small batches so you can stand out from the crowd.</p>
+</section>
+
+<section class="quote-block">
+    “Worn Out Loud. Never Watered Down.”
+</section>
+
+<section id="testimonials" class="testimonial-section">
+    <h2>What People Are Saying</h2>
+    <div class="testimonial">"The quality is unmatched and the designs are fire. Can't wait for the next drop!" – Jordan</div>
+    <div class="testimonial">"Finally found a brand that gets me. Everything just hits different." – Riley</div>
+</section>
+
+<section id="newsletter" class="email-signup">
+    <p>Hit That Inbox</p>
+    <input type="email" placeholder="Your email...">
+    <button>Sign Up</button>
+</section>
+
+<footer>
+    &copy; 2025 Cebastian Co. – All Rights Reserved.
+</footer>
+
+</body>
+</html>
