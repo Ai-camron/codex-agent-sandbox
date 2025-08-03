@@ -1,0 +1,114 @@
+/* VibeThreads E-commerce Website Styles */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+header {
+    background: #1c1c1c;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 180px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-weight: 800;
+    color: #ff6b6b;
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+nav {
+    background-color: #000;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #f5f5f5;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #ff6b6b;
+}
+
+.cart-count {
+    color: #ff6b6b;
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta {
+    background-color: #ff6b6b;
+    color: #111;
+    padding: 12px 40px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+.product-card {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border: 2px solid #ff6b6b;
+    text-align: center;
+}
+
+.product-card .btn {
+    margin-top: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    font-size: 14px;
+}
+
+/* Utility */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #111;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff8787;
+}

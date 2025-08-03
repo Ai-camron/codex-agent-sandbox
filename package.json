@@ -1,0 +1,16 @@
+{
+  "name": "codex-agent-sandbox",
+  "version": "1.0.0",
+  "description": "A sandbox environment for running and testing OpenAI Codex code completions and agents. Includes utilities for code execution, logging, and resource management.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "json": "^11.0.0"
+  }
+}
