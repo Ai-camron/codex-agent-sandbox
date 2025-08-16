@@ -44,10 +44,6 @@ nav a:hover {
     color: #ff6b6b;
 }
 
-.cart-count {
-    color: #ff6b6b;
-}
-
 .hero {
     padding: 60px 20px;
     text-align: center;
@@ -77,11 +73,6 @@ nav a:hover {
     border: 2px solid #ff6b6b;
     text-align: center;
 }
-
-.product-card .btn {
-    margin-top: 10px;
-}
-
 .product-card img {
     width: 100%;
     height: auto;
