@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart – VibeThreads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://picsum.photos/seed/vibethreadslogo/300/80" alt="VibeThreads logo">
+        <h1>Your Cart</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+    </nav>
+    <section class="container" id="cart-items" style="padding:60px 20px;"></section>
+    <footer class="footer">
+        &copy; 2025 VibeThreads. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    function renderCart() {
+        const cart = loadCart();
+        const container = document.getElementById('cart-items');
+        if (cart.length === 0) {
+            container.innerHTML = '<p>Your cart is empty.</p>';
+            return;
+        }
+        let total = 0;
+        const list = document.createElement('ul');
+        cart.forEach(item => {
+            total += item.price;
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+            list.appendChild(li);
+        });
+        const totalEl = document.createElement('p');
+        totalEl.style.fontWeight = 'bold';
+        totalEl.textContent = `Total: $${total.toFixed(2)}`;
+        container.appendChild(list);
+        container.appendChild(totalEl);
+    }
+    document.addEventListener('DOMContentLoaded', renderCart);
+    </script>
+</body>
+</html>
