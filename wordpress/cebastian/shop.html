@@ -1,0 +1,123 @@
+<!-- CEBASTIAN Co. – Shop Page Content (Kadence HTML Block) -->
+<section class="kdn-section" aria-labelledby="shop-hero-title">
+    <div class="kdn-container">
+        <div class="kdn-grid kdn-grid--2" style="align-items:center;">
+            <div class="kdn-animate">
+                <p class="kdn-pill">Shop</p>
+                <h1 id="shop-hero-title" class="kdn-title" style="font-size:clamp(2.75rem,6vw,4rem);">Discover Your Next Legend</h1>
+                <p class="kdn-subtitle">Browse celestial streetwear engineered for performance and presence. Sort by drop, category, or vibe, then assemble your own pantheon.</p>
+                <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+                    <a class="kdn-btn kdn-btn--primary" href="#catalog">Jump to Catalog</a>
+                    <a class="kdn-btn kdn-btn--ghost" href="/contact/" aria-label="Connect with styling concierge">Styling Concierge</a>
+                </div>
+            </div>
+            <div class="kdn-animate">
+                <div class="kdn-card">
+                    <h2 class="kdn-card__title">Shop Services</h2>
+                    <ul class="kdn-card__text" style="display:grid; gap:0.75rem; list-style:none; padding:0;">
+                        <li>• Complimentary tailoring on qualifying orders.</li>
+                        <li>• Express global shipping on orders over $150.</li>
+                        <li>• Access to members-only mystery drops each solstice.</li>
+                        <li>• Earn points every time you wield CEBASTIAN gear.</li>
+                    </ul>
+                    <a class="kdn-btn kdn-btn--outline" href="/my-account/#dashboard">Join the Loyalty Guild</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="kdn-section kdn-section--featured" id="catalog" aria-labelledby="categories-title">
+    <div class="kdn-container">
+        <header class="kdn-section__header kdn-animate">
+            <p class="kdn-pill">Collections</p>
+            <h2 id="categories-title" class="kdn-title">Shop by Realm</h2>
+            <p class="kdn-subtitle">Navigate our curated categories—outerwear forged for frost, essentials honed for city quests, and accessories to complete the lore.</p>
+        </header>
+        <div class="kdn-animate">
+            <!-- WooCommerce Shortcode -->
+            <div class="woocommerce-shortcode">[product_categories number="4" columns="4" hide_empty="false"]</div>
+        </div>
+    </div>
+</section>
+
+<section class="kdn-section" aria-labelledby="filters-title">
+    <div class="kdn-container">
+        <div class="kdn-card kdn-animate">
+            <h2 id="filters-title" class="kdn-card__title">Power-Up Filters</h2>
+            <div class="kdn-grid kdn-grid--3" style="margin-top:1.5rem;">
+                <div class="kdn-stat">
+                    <p class="kdn-stat__value">Aura</p>
+                    <p class="kdn-stat__label">Neon, Eclipse, Ether</p>
+                </div>
+                <div class="kdn-stat">
+                    <p class="kdn-stat__value">Armor</p>
+                    <p class="kdn-stat__label">Outerwear, Tops, Bottoms</p>
+                </div>
+                <div class="kdn-stat">
+                    <p class="kdn-stat__value">Rarity</p>
+                    <p class="kdn-stat__label">Core, Limited, Archive</p>
+                </div>
+            </div>
+            <p class="kdn-card__text" style="margin-top:1.5rem;">Use the sorting controls below to toggle through release dates, price points, and popularity. Combine filters to manifest your ideal fit.</p>
+        </div>
+    </div>
+</section>
+
+<section class="kdn-section" id="shop-grid" aria-labelledby="catalog-title">
+    <div class="kdn-container">
+        <header class="kdn-section__header kdn-animate">
+            <span class="kdn-pill">All Products</span>
+            <h2 id="catalog-title" class="kdn-title">Full Catalog</h2>
+            <p class="kdn-subtitle">Scroll through the complete CEBASTIAN inventory. The shortcode below respects WooCommerce sorting, filters, and pagination.</p>
+        </header>
+        <div class="kdn-animate">
+            <!-- WooCommerce Shortcode -->
+            <div class="woocommerce-shortcode">[products paginate="true" columns="4" limit="12"]</div>
+        </div>
+    </div>
+</section>
+
+<section class="kdn-section kdn-section--featured" aria-labelledby="bestsellers-title">
+    <div class="kdn-container">
+        <header class="kdn-section__header kdn-animate">
+            <span class="kdn-pill">Fan Favorites</span>
+            <h2 id="bestsellers-title" class="kdn-title">Best Sellers</h2>
+            <p class="kdn-subtitle">Claim pieces that continuously sell out—these staples anchor every legendary wardrobe.</p>
+        </header>
+        <div class="kdn-animate">
+            <!-- WooCommerce Shortcode -->
+            <div class="woocommerce-shortcode">[best_selling_products limit="4" columns="4"]</div>
+        </div>
+    </div>
+</section>
+
+<section class="kdn-section" aria-labelledby="archive-title">
+    <div class="kdn-container">
+        <div class="kdn-section__header kdn-animate">
+            <span class="kdn-pill">Vault</span>
+            <h2 id="archive-title" class="kdn-title">Archive Drops</h2>
+            <p class="kdn-subtitle">Relive rare silhouettes that defined our story. When they re-emerge, newsletter subscribers are the first to know.</p>
+        </div>
+        <div class="kdn-grid kdn-grid--3">
+            <article class="kdn-card kdn-animate">
+                <span class="kdn-card__eyebrow">Drop 01</span>
+                <h3 class="kdn-card__title">Celestial Vanguard</h3>
+                <p class="kdn-card__text">Where it all began—obsidian hoodies with glow-thread sigils, sold out in 26 hours.</p>
+            </article>
+            <article class="kdn-card kdn-animate">
+                <span class="kdn-card__eyebrow">Drop 05</span>
+                <h3 class="kdn-card__title">Chromatic Echoes</h3>
+                <p class="kdn-card__text">Reflective denim suits crafted with prismatic foil overlays for night riders.</p>
+            </article>
+            <article class="kdn-card kdn-animate">
+                <span class="kdn-card__eyebrow">Drop 08</span>
+                <h3 class="kdn-card__title">Mythos Tactical</h3>
+                <p class="kdn-card__text">Convertible trench with concealed harness and stormproof venting for covert missions.</p>
+            </article>
+        </div>
+        <div style="text-align:center; margin-top:2.5rem;" class="kdn-animate">
+            <a class="kdn-btn kdn-btn--outline" href="/newsletter/">Get Archive Alerts</a>
+        </div>
+    </div>
+</section>
