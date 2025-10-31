@@ -4,49 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VibeThreads – Bold Streetwear</title>
+    <meta name="description" content="VibeThreads delivers bold, limited-run streetwear designed for expressive individuals.">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="https://picsum.photos/seed/vibethreadslogo/300/80" alt="VibeThreads logo">
-        <h1>Live Loud, Wear Vivid</h1>
-        <a href="shop.html" class="btn cta">Shop Now</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <img src="https://picsum.photos/seed/vibethreadslogo/300/80" alt="VibeThreads logo" width="180" height="80" class="site-header__logo" loading="lazy">
+        <h1 class="site-header__title">Live Loud, Wear Vivid</h1>
+        <a href="/shop" class="btn site-header__cta">Shop Now</a>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+            <li><a href="/" aria-current="page">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/cart">Cart <span class="cart-count" aria-live="polite" aria-atomic="true" aria-label="0 items in cart">0</span></a></li>
+        </ul>
     </nav>
-    <section class="hero container">
-        <p>Welcome to VibeThreads, your source for colorful, limited-run streetwear designed to make a statement.</p>
-    </section>
-    <section class="product-grid">
-        <div class="product-card">
-            <img src="https://picsum.photos/seed/shirt1/300/250" alt="Vivid Tee">
-            <h3>Vivid Tee</h3>
-            <p>$29.99</p>
-            <a href="product.html" class="btn">View</a>
-        </div>
-        <div class="product-card">
-            <img src="https://picsum.photos/seed/shirt2/300/250" alt="Hype Hoodie">
-            <h3>Hype Hoodie</h3>
-            <p>$59.99</p>
-            <a href="product.html" class="btn">View</a>
-        </div>
-        <div class="product-card">
-            <img src="https://picsum.photos/seed/shirt3/300/250" alt="Splash Cap">
-            <h3>Splash Cap</h3>
-            <p>$19.99</p>
-            <a href="product.html" class="btn">View</a>
-        </div>
-        <div class="product-card">
-            <img src="https://picsum.photos/seed/shirt4/300/250" alt="Glow Joggers">
-            <h3>Glow Joggers</h3>
-            <p>$49.99</p>
-            <a href="product.html" class="btn">View</a>
-        </div>
-    </section>
+    <main id="main-content" class="page-main">
+        <section class="page-section page-section--narrow">
+            <div class="page-section__inner">
+                <div class="hero" aria-labelledby="hero-heading">
+                    <h2 id="hero-heading" class="section-heading">Statement Streetwear</h2>
+                    <p class="lead-text">Welcome to VibeThreads, your source for colorful, limited-run streetwear designed to make a statement.</p>
+                </div>
+            </div>
+        </section>
+        <section class="page-section" aria-labelledby="featured-products-heading">
+            <div class="page-section__inner">
+                <h2 id="featured-products-heading" class="section-heading">Featured Products</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/shirt1/300/250" alt="Vivid Tee" width="300" height="250" loading="lazy">
+                        <h3>Vivid Tee</h3>
+                        <p class="product-card__price">$29.99</p>
+                        <div class="product-card__actions">
+                            <a href="/product" class="btn">View product details</a>
+                            <button type="button" class="btn add-to-cart" data-name="Vivid Tee" data-price="29.99">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/shirt2/300/250" alt="Hype Hoodie" width="300" height="250" loading="lazy">
+                        <h3>Hype Hoodie</h3>
+                        <p class="product-card__price">$59.99</p>
+                        <div class="product-card__actions">
+                            <a href="/product" class="btn">View product details</a>
+                            <button type="button" class="btn add-to-cart" data-name="Hype Hoodie" data-price="59.99">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/shirt3/300/250" alt="Splash Cap" width="300" height="250" loading="lazy">
+                        <h3>Splash Cap</h3>
+                        <p class="product-card__price">$19.99</p>
+                        <div class="product-card__actions">
+                            <a href="/product" class="btn">View product details</a>
+                            <button type="button" class="btn add-to-cart" data-name="Splash Cap" data-price="19.99">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/shirt4/300/250" alt="Glow Joggers" width="300" height="250" loading="lazy">
+                        <h3>Glow Joggers</h3>
+                        <p class="product-card__price">$49.99</p>
+                        <div class="product-card__actions">
+                            <a href="/product" class="btn">View product details</a>
+                            <button type="button" class="btn add-to-cart" data-name="Glow Joggers" data-price="49.99">Add to cart</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         &copy; 2025 VibeThreads. All rights reserved.
     </footer>

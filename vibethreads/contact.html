@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact – VibeThreads</title>
+    <meta name="description" content="Connect with the VibeThreads team for support, collaborations, or community inquiries.">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="https://picsum.photos/seed/vibethreadslogo/300/80" alt="VibeThreads logo">
-        <h1>Get in Touch</h1>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <img src="https://picsum.photos/seed/vibethreadslogo/300/80" alt="VibeThreads logo" width="180" height="80" class="site-header__logo" loading="lazy">
+        <h1 class="site-header__title">Get in Touch</h1>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact" aria-current="page">Contact</a></li>
+            <li><a href="/cart">Cart <span class="cart-count" aria-live="polite" aria-atomic="true" aria-label="0 items in cart">0</span></a></li>
+        </ul>
     </nav>
-    <section class="container" style="padding:60px 20px;">
-        <form>
-            <div style="margin-bottom:15px;">
-                <input type="text" placeholder="Name" style="width:100%;padding:10px;">
+    <main id="main-content" class="page-main">
+        <section class="page-section page-section--narrow" aria-labelledby="contact-heading">
+            <div class="page-section__inner">
+                <h2 id="contact-heading" class="section-heading">Send us a message</h2>
+                <form class="contact-form" aria-describedby="contact-helper" novalidate>
+                    <p id="contact-helper" class="form-helper">All fields are required so we can respond to your message promptly.</p>
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" class="input-control" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" class="input-control" autocomplete="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="input-control" rows="5" required></textarea>
+                    </div>
+                    <button class="btn" type="submit">Send message</button>
+                </form>
             </div>
-            <div style="margin-bottom:15px;">
-                <input type="email" placeholder="Email" style="width:100%;padding:10px;">
-            </div>
-            <div style="margin-bottom:15px;">
-                <textarea placeholder="Message" rows="5" style="width:100%;padding:10px;"></textarea>
-            </div>
-            <button class="cta" type="submit">Send</button>
-        </form>
-    </section>
+        </section>
+    </main>
     <footer class="footer">
         &copy; 2025 VibeThreads. All rights reserved.
     </footer>
