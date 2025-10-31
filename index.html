@@ -1,222 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cebastian Co. – E-Shop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Exo 2', sans-serif;
-            background-color: #0A0A11;
-            color: #E8E8E8;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #141A1F;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header img {
-            max-width: 180px;
-            margin-bottom: 10px;
-        }
-        h1 {
-            font-weight: 800;
-            color: #03F7C4;
-            font-size: 48px;
-            margin: 20px 0;
-        }
-        .cta {
-            background-color: #03F7C4;
-            color: #0A0A11;
-            padding: 10px 30px;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
-            font-size: 18px;
-        }
-        nav {
-            background-color: #0A0A11;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav a {
-            color: #E8E8E8;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        nav a:hover {
-            color: #03F7C4;
-        }
-        .hero {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            padding: 60px 20px;
-            background-color: #141A1F;
-        }
-        .category-tile {
-            background-color: #07816B;
-            padding: 40px 20px;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            color: #fff;
-        }
-        .featured-section {
-            padding: 60px 20px;
-            background-color: #0A0A11;
-        }
-        .featured-section h2 {
-            color: #F9B12C;
-            font-size: 32px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .product-row {
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            padding-bottom: 10px;
-        }
-        .product-card {
-            background-color: #141A1F;
-            padding: 20px;
-            min-width: 200px;
-            border: 1px solid #03F7C4;
-        }
-        .about-section {
-            background-color: #141A1F;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .about-section h2 {
-            color: #03F7C4;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .quote-block {
-            background-color: #4D402B;
-            padding: 40px 20px;
-            text-align: center;
-            font-size: 24px;
-            font-style: italic;
-        }
-        .testimonial-section {
-            background-color: #141A1F;
-            padding: 60px 20px;
-        }
-        .testimonial-section h2 {
-            text-align: center;
-            color: #F9B12C;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .testimonial {
-            background-color: #0A0A11;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 600px;
-            border: 1px solid #03F7C4;
-        }
-        .email-signup {
-            background-color: #141A1F;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .email-signup input {
-            padding: 10px;
-            font-size: 16px;
-            margin-right: 10px;
-            width: 250px;
-        }
-        .email-signup button {
-            padding: 10px 20px;
-            background-color: #03F7C4;
-            color: #0A0A11;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #0A0A11;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEBASTIAN Co. – Streetwear Styled Beyond Boundaries</title>
+  <meta name="description" content="CEBASTIAN Co. — streetwear styled beyond boundaries. Discover new drops, featured collections, and best sellers." />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CEBASTIAN Co.">
+  <meta property="og:title" content="CEBASTIAN Co.">
+  <meta property="og:description" content="Streetwear styled beyond boundaries. New drops, collections, and best sellers.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516571137133-1be29e37143c?q=80&w=1200&auto=format&fit=crop">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
 </head>
 <body>
-
-<header>
-    <img src="cebastianco_name_mark_logo_gold.jpeg" alt="Cebastian Co. Logo">
-    <h1>New Drops, No Excuses</h1>
-    <button class="cta">Shop The Hype</button>
-</header>
-
-<nav>
-    <a href="#categories">Categories</a>
-    <a href="#featured">Featured</a>
-    <a href="#about">About</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#newsletter">Newsletter</a>
-</nav>
-
-<section class="hero">
-    <p>Welcome to Cebastian Co., the home of limited streetwear drops. Elevate your style with exclusive pieces crafted to turn heads.</p>
-</section>
-
-<section id="categories" class="category-grid">
-    <div class="category-tile">Hoodies</div>
-    <div class="category-tile">Tees</div>
-    <div class="category-tile">Accessories</div>
-    <div class="category-tile">Limited</div>
-    <div class="category-tile">Sale</div>
-    <div class="category-tile">Lookbook</div>
-</section>
-
-<section id="featured" class="featured-section">
-    <h2>Featured Drops</h2>
-    <div class="product-row">
-        <div class="product-card">Product 1</div>
-        <div class="product-card">Product 2</div>
-        <div class="product-card">Product 3</div>
-        <div class="product-card">Product 4</div>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="background" aria-hidden="true"></div>
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a class="brand" href="#home" aria-current="page">
+        <span class="brand-main">CEBASTIAN</span><span class="brand-accent">Co</span>
+      </a>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li class="nav-pop">
+            <button class="pop-trigger" aria-haspopup="true" aria-expanded="false">Shop</button>
+            <div class="pop-menu mega" role="menu" aria-label="Shop Menu">
+              <a href="shop.html?sort=new" role="menuitem">New Arrivals</a>
+              <a href="shop.html?category=clothing" role="menuitem">Clothing</a>
+              <a href="shop.html?category=accessories" role="menuitem">Accessories</a>
+              <a href="shop.html?category=footwear" role="menuitem">Footwear</a>
+              <a href="shop.html?category=sale" role="menuitem">Sale</a>
+            </div>
+          </li>
+          <li><a href="lookbook.html">Collections</a></li>
+          <li><a href="drops.html">Drops</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions" aria-label="Quick Actions">
+        <a class="icon-btn" href="shop.html" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-1.06 1.06l.27.28v.79l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 10 5a4.5 4.5 0 0 1-.5 9z"/></svg>
+        </a>
+        <a class="icon-btn" href="myaccount.html" aria-label="Account">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.33 0-8 2.17-8 5v1h16v-1c0-2.83-3.67-5-8-5z"/></svg>
+        </a>
+        <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 21s-6.716-4.477-9.193-7.193C.451 11.27.91 7.84 3.343 6.05 5.09 4.72 7.6 5.05 9 6.5L12 9.5l3-3c1.4-1.45 3.91-1.78 5.657-.45 2.433 1.79 2.892 5.22.536 7.757C18.716 16.523 12 21 12 21z"/></svg>
+        </a>
+        <a class="icon-btn cart" href="cart.html" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 4h-2l-1 2H1v2h2l3.6 7.59L5.25 19a2 2 0 1 0 1.75 1h7a2 2 0 1 0 1.75-1H8.1l.9-2h7.45a1 1 0 0 0 .92-.62L21 8H7.42l-.75-1.5L7 4z"/></svg>
+          <span class="badge" aria-label="2 items in cart">2</span>
+        </a>
+      </div>
     </div>
-</section>
+  </header>
+  <main id="main">
+    <section class="hero-campaign" aria-labelledby="main-title">
+      <div class="campaign-overlay" aria-hidden="true"></div>
+      <img class="campaign-bg" src="https://images.unsplash.com/photo-1516571137133-1be29e37143c?q=80&w=2069&auto=format&fit=crop" alt="Urban streetwear campaign background" loading="lazy"/>
+      <div class="container">
+        <div class="campaign-card animate-on-scroll">
+          <h1 id="main-title">New Drop: Urban Classics</h1>
+          <p>Minimal silhouettes. Heavy rotation staples. Limited restocks.</p>
+          <div class="cta-row">
+            <a href="shop.html?sort=new" class="btn btn-primary">Shop New Arrivals</a>
+            <a href="shop.html" class="btn btn-ghost">Browse All</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="about" class="about-section">
-    <h2>Our Story</h2>
-    <p>Born from a love of music and street culture, Cebastian Co. brings bold designs that speak volumes. Each drop is crafted in small batches so you can stand out from the crowd.</p>
-</section>
+    <div class="home-container">
+      <section class="collection-tiles animate-on-scroll" aria-labelledby="category-title">
+        <div class="container section-head">
+          <h2 id="category-title">Shop by Category</h2>
+        </div>
+        <div class="container tiles-grid" role="list">
+          <a href="shop.html?category=clothing" class="tile-card" role="listitem">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1520975693416-35a2a66fd7c0?q=80&w=2069&auto=format&fit=crop" alt="Clothing collection tile">
+            <div class="tile-footer">
+              <span>Clothing</span>
+              <span class="hint">Shop →</span>
+            </div>
+          </a>
+          <a href="shop.html?category=footwear" class="tile-card" role="listitem">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2069&auto=format&fit=crop" alt="Footwear collection tile">
+            <div class="tile-footer">
+              <span>Footwear</span>
+              <span class="hint">Shop →</span>
+            </div>
+          </a>
+          <a href="shop.html?category=accessories" class="tile-card" role="listitem">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1503342217505-b0a15cf70489?q=80&w=2069&auto=format&fit=crop" alt="Accessories collection tile">
+            <div class="tile-footer">
+              <span>Accessories</span>
+              <span class="hint">Shop →</span>
+            </div>
+          </a>
+          <a href="shop.html?category=sale" class="tile-card" role="listitem">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1520975764743-96fcf8c5b7f0?q=80&w=2069&auto=format&fit=crop" alt="Sale collection tile">
+            <div class="tile-footer">
+              <span>Sale</span>
+              <span class="hint">Shop →</span>
+            </div>
+          </a>
+        </div>
+      </section>
 
-<section class="quote-block">
-    “Worn Out Loud. Never Watered Down.”
-</section>
+      <section class="section-products animate-on-scroll" aria-labelledby="arrivals-title">
+        <div class="container section-head">
+          <h2 id="arrivals-title">New Arrivals</h2>
+          <a class="view-all" href="shop.html?sort=new">View all</a>
+        </div>
+        <div class="container">
+          <div class="woocommerce-shortcode" aria-label="Product grid placeholder">
+            <div class="wc-grid">
+              <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+              <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+              <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+              <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+              <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+              <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+              <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+              <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+            </div>
+            <p class="wc-code">[products limit="8" columns="4" orderby="date" order="DESC" visibility="visible"]</p>
+          </div>
+        </div>
+      </section>
 
-<section id="testimonials" class="testimonial-section">
-    <h2>What People Are Saying</h2>
-    <div class="testimonial">"The quality is unmatched and the designs are fire. Can't wait for the next drop!" – Jordan</div>
-    <div class="testimonial">"Finally found a brand that gets me. Everything just hits different." – Riley</div>
-</section>
+      <section class="brand-story animate-on-scroll" aria-labelledby="story-title">
+        <div class="story-content-new">
+          <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Stylish person wearing streetwear" loading="lazy">
+          <div class="story-text">
+            <h2 id="story-title">Born from Passion</h2>
+            <p>CEBASTIAN Co. was born from a passion for maximalist streetwear and fearless self-expression. We push boundaries with every design, blending vibrant colors, bold graphics, and premium materials. Our mission: empower you to stand out and be unapologetically you.</p>
+            <a href="about.html" class="cta-secondary">Learn More</a>
+          </div>
+        </div>
+      </section>
 
-<section id="newsletter" class="email-signup">
-    <p>Hit That Inbox</p>
-    <input type="email" placeholder="Your email...">
-    <button>Sign Up</button>
-</section>
+      <section class="testimonials animate-on-scroll" aria-labelledby="testimonials-title">
+        <div class="container">
+          <h2 id="testimonials-title">What Our Fans Say</h2>
+          <div class="testimonial-grid">
+            <blockquote>“CEBASTIAN Co. is the only brand that truly lets me express my style!”</blockquote>
+            <blockquote>“The quality and boldness are unmatched. I get compliments everywhere I go.”</blockquote>
+          </div>
+        </div>
+      </section>
 
-<footer>
-    &copy; 2025 Cebastian Co. – All Rights Reserved.
-</footer>
+      <section class="newsletter animate-on-scroll" aria-labelledby="newsletter-title">
+        <div class="container">
+          <h2 id="newsletter-title">Stay in the Loop</h2>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <label class="sr-only" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <button type="submit">Sign Up</button>
+          </form>
+          <p class="form-hint">No spam, unsubscribe any time.</p>
+          <div id="newsletter-status" role="status" aria-live="polite" class="sr-only"></div>
+        </div>
+      </section>
+    </div>
+  </main>
 
+  <section class="section-products animate-on-scroll" aria-labelledby="bestsellers-title">
+    <div class="container section-head">
+      <h2 id="bestsellers-title">Best Sellers</h2>
+      <a class="view-all" href="shop.html?orderby=popularity">View all</a>
+    </div>
+    <div class="container">
+      <div class="woocommerce-shortcode" aria-label="Popular products placeholder">
+        <div class="wc-grid">
+          <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+          <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+          <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+          <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+          <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+          <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+          <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+          <div class="wc-card" aria-hidden="true"><div class="ph-img"></div><div class="ph-text"></div><div class="ph-sub"></div></div>
+        </div>
+        <p class="wc-code">[products limit="8" columns="4" orderby="popularity"]</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="shipping.html">Shipping Policy</a>
+      <a href="returns.html">Return Policy</a>
+    </div>
+    <p>&copy; 2025 CEBASTIAN Co. All rights reserved.</p>
+    <p><a href="https://cebastianco.com">www.CEBASTIANCO.com</a></p>
+  </footer>
 </body>
 </html>
