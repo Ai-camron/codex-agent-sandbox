@@ -4,45 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop – VibeThreads</title>
+    <meta name="description" content="Browse vibrant tees, hoodies, and accessories from the VibeThreads collection.">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="https://picsum.photos/seed/vibethreadslogo/300/80" alt="VibeThreads logo">
-        <h1>Shop VibeThreads</h1>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <img src="https://picsum.photos/seed/vibethreadslogo/300/80" alt="VibeThreads logo" width="180" height="80" class="site-header__logo" loading="lazy">
+        <h1 class="site-header__title">Shop VibeThreads</h1>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop" aria-current="page">Shop</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/cart">Cart <span class="cart-count" aria-live="polite" aria-atomic="true" aria-label="0 items in cart">0</span></a></li>
+        </ul>
     </nav>
-    <section class="product-grid">
-        <div class="product-card">
-            <img src="https://picsum.photos/seed/product1/300/250" alt="Burst Tee">
-            <h3>Burst Tee</h3>
-            <p>$29.99</p>
-            <a href="product.html" class="btn">Details</a>
-        </div>
-        <div class="product-card">
-            <img src="https://picsum.photos/seed/product2/300/250" alt="Neon Crew">
-            <h3>Neon Crew</h3>
-            <p>$39.99</p>
-            <a href="product.html" class="btn">Details</a>
-        </div>
-        <div class="product-card">
-            <img src="https://picsum.photos/seed/product3/300/250" alt="Ink Hoodie">
-            <h3>Ink Hoodie</h3>
-            <p>$64.99</p>
-            <a href="product.html" class="btn">Details</a>
-        </div>
-        <div class="product-card">
-            <img src="https://picsum.photos/seed/product4/300/250" alt="Glow Joggers">
-            <h3>Glow Joggers</h3>
-            <p>$49.99</p>
-            <a href="product.html" class="btn">Details</a>
-        </div>
-    </section>
+    <main id="main-content" class="page-main">
+        <section class="page-section" aria-labelledby="shop-heading">
+            <div class="page-section__inner">
+                <h2 id="shop-heading" class="section-heading">Shop the collection</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/product1/300/250" alt="Burst Tee" width="300" height="250" loading="lazy">
+                        <h3>Burst Tee</h3>
+                        <p class="product-card__price">$29.99</p>
+                        <div class="product-card__actions">
+                            <a href="/product" class="btn">View product details</a>
+                            <button type="button" class="btn add-to-cart" data-name="Burst Tee" data-price="29.99">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/product2/300/250" alt="Neon Crew" width="300" height="250" loading="lazy">
+                        <h3>Neon Crew</h3>
+                        <p class="product-card__price">$39.99</p>
+                        <div class="product-card__actions">
+                            <a href="/product" class="btn">View product details</a>
+                            <button type="button" class="btn add-to-cart" data-name="Neon Crew" data-price="39.99">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/product3/300/250" alt="Ink Hoodie" width="300" height="250" loading="lazy">
+                        <h3>Ink Hoodie</h3>
+                        <p class="product-card__price">$64.99</p>
+                        <div class="product-card__actions">
+                            <a href="/product" class="btn">View product details</a>
+                            <button type="button" class="btn add-to-cart" data-name="Ink Hoodie" data-price="64.99">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/product4/300/250" alt="Glow Joggers" width="300" height="250" loading="lazy">
+                        <h3>Glow Joggers</h3>
+                        <p class="product-card__price">$49.99</p>
+                        <div class="product-card__actions">
+                            <a href="/product" class="btn">View product details</a>
+                            <button type="button" class="btn add-to-cart" data-name="Glow Joggers" data-price="49.99">Add to cart</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         &copy; 2025 VibeThreads. All rights reserved.
     </footer>

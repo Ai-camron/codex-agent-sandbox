@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About – VibeThreads</title>
+    <meta name="description" content="Discover the story behind VibeThreads and our commitment to expressive streetwear.">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="https://picsum.photos/seed/vibethreadslogo/300/80" alt="VibeThreads logo">
-        <h1>About VibeThreads</h1>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <img src="https://picsum.photos/seed/vibethreadslogo/300/80" alt="VibeThreads logo" width="180" height="80" class="site-header__logo" loading="lazy">
+        <h1 class="site-header__title">About VibeThreads</h1>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/about" aria-current="page">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/cart">Cart <span class="cart-count" aria-live="polite" aria-atomic="true" aria-label="0 items in cart">0</span></a></li>
+        </ul>
     </nav>
-    <section class="container" style="padding:60px 20px;">
-        <p>Born from the energy of the streets, VibeThreads brings you limited-run apparel with vivid colors and fearless designs. Our mission is to empower you to express your true self through bold fashion.</p>
-    </section>
+    <main id="main-content" class="page-main">
+        <section class="page-section page-section--narrow" aria-labelledby="about-heading">
+            <div class="page-section__inner">
+                <h2 id="about-heading" class="section-heading">Our Story</h2>
+                <p class="lead-text">Born from the energy of the streets, VibeThreads celebrates fearless self-expression with limited-run apparel and vivid color palettes.</p>
+                <p class="lead-text">Each drop is crafted in collaboration with emerging artists, responsibly produced, and designed to empower you to stand out with confidence.</p>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         &copy; 2025 VibeThreads. All rights reserved.
     </footer>
