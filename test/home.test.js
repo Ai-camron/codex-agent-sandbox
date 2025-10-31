@@ -47,7 +47,7 @@ test('CSS defines key layout and interaction classes', () => {
   });
 });
 
-test('JavaScript wires up required behaviours', () => {
+test('JavaScript wires up required behaviors', () => {
   assert.match(js, /navToggle/);
   assert.match(js, /IntersectionObserver/);
   assert.match(js, /newsletterForm/);
