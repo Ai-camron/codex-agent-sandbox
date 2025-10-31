@@ -79,7 +79,7 @@ ready(() => {
     document.querySelectorAll('.animate-on-scroll').forEach((el) => el.classList.add('in-view'));
   }
 
-  // Newsletter form behaviour
+  // Newsletter form behavior
   const newsletterForm = document.querySelector('.newsletter-form');
   const statusRegion = document.getElementById('newsletter-status');
 
