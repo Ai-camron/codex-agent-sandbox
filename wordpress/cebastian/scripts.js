@@ -50,6 +50,10 @@
         const status = form.querySelector('[data-newsletter-status]');
         form.addEventListener('submit', (event) => {
             if (!submitBtn) return;
+            // PLACEHOLDER: This is a mock implementation for demonstration purposes only.
+            // No actual data is sent to a server. Backend integration is required to
+            // collect and store newsletter subscriptions (e.g., Mailchimp, SendGrid, or
+            // a custom API endpoint).
             event.preventDefault();
             const emailField = form.querySelector('input[type="email"]');
             const originalLabel = submitBtn.textContent;
