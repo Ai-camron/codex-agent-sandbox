@@ -44,6 +44,10 @@
         });
     });
 
+    // Newsletter form handler - PLACEHOLDER IMPLEMENTATION
+    // This is a mock form submission for demonstration purposes only.
+    // TODO: Integrate with a real email service provider (e.g., Mailchimp, SendGrid)
+    // to actually collect and store newsletter subscriptions.
     const newsletterForms = document.querySelectorAll('.kdn-newsletter__form');
     newsletterForms.forEach((form) => {
         const submitBtn = form.querySelector('button, input[type="submit"]');
@@ -77,6 +81,10 @@
         });
     });
 
+    // Contact form handler - PLACEHOLDER IMPLEMENTATION
+    // This is a mock form submission for demonstration purposes only.
+    // TODO: Integrate with a real backend service or email API
+    // to actually send contact form submissions.
     const contactForms = document.querySelectorAll('.kdn-contact-form');
     contactForms.forEach((form) => {
         const submitBtn = form.querySelector('button, input[type="submit"]');
