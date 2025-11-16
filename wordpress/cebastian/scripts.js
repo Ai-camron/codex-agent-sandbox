@@ -89,10 +89,11 @@
             submitBtn.textContent = 'Sending…';
 
             setTimeout(() => {
-                submitBtn.textContent = 'Message Sent';
+                submitBtn.textContent = 'Demo Complete';
                 submitBtn.classList.add('is-success');
                 if (status) {
-                    status.textContent = 'Thank you! Our concierge will respond within 24 hours.';
+                    status.textContent = '⚠️ DEMO MODE: No data was actually sent. This is a static demo site.';
+                    status.style.color = '#fbbf24';
                 }
 
                 setTimeout(() => {
@@ -102,8 +103,9 @@
                     form.reset();
                     if (status) {
                         status.textContent = '';
+                        status.style.color = '';
                     }
-                }, 2400);
+                }, 3500);
             }, 1400);
         });
     });
