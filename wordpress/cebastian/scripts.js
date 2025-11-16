@@ -58,7 +58,6 @@
 
             setTimeout(() => {
                 submitBtn.textContent = 'Subscribed!';
-                submitBtn.setAttribute('aria-live', 'polite');
                 submitBtn.classList.add('is-success');
                 if (status) {
                     status.textContent = `Subscribed with ${emailField.value}`;
