@@ -795,9 +795,13 @@ body.has-scrolled .site-header {
 .kdn-contact-form input:focus,
 .kdn-contact-form select:focus,
 .kdn-contact-form textarea:focus {
-    outline: none;
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 2px;
     border-color: var(--primary);
     background: rgba(255, 255, 255, 0.12);
+    /* Alternatively, for a more prominent effect, use box-shadow:
+       box-shadow: 0 0 0 3px var(--primary-dark);
+    */
 }
 
 .kdn-contact-form textarea {
