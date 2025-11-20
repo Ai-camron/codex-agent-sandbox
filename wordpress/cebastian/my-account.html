@@ -1,0 +1,97 @@
+<!-- CEBASTIAN Co. – My Account Page Content (Kadence HTML Block) -->
+<section class="kdn-section" aria-labelledby="account-title">
+    <div class="kdn-container">
+        <header class="kdn-section__header kdn-animate">
+            <p class="kdn-pill">Member Portal</p>
+            <h1 id="account-title" class="kdn-title">Welcome to the CEBASTIAN Guild</h1>
+            <p class="kdn-subtitle">Manage orders, update profile details, redeem loyalty perks, and access exclusive drops from your personalized dashboard.</p>
+        </header>
+        <div class="kdn-grid kdn-grid--3">
+            <article class="kdn-card kdn-animate">
+                <h2 class="kdn-card__title">Track Your Orders</h2>
+                <p class="kdn-card__text">Monitor current shipments, download invoices, and initiate returns with ease.</p>
+                <a class="kdn-btn kdn-btn--ghost" href="#dashboard-orders">View Orders</a>
+            </article>
+            <article class="kdn-card kdn-animate">
+                <h2 class="kdn-card__title">Manage Profile</h2>
+                <p class="kdn-card__text">Update addresses, payment methods, and wardrobe preferences to tailor future drops.</p>
+                <a class="kdn-btn kdn-btn--ghost" href="#dashboard-details">Edit Details</a>
+            </article>
+            <article class="kdn-card kdn-animate">
+                <h2 class="kdn-card__title">Loyalty Rewards</h2>
+                <p class="kdn-card__text">Earn points for every purchase. Unlock early access and exclusive experiences.</p>
+                <a class="kdn-btn kdn-btn--ghost" href="#dashboard-rewards">Check Rewards</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="dashboard" class="kdn-section kdn-section--featured" aria-labelledby="dashboard-title">
+    <div class="kdn-container">
+        <header class="kdn-section__header kdn-animate">
+            <span class="kdn-pill">Dashboard</span>
+            <h2 id="dashboard-title" class="kdn-title">Your Control Center</h2>
+            <p class="kdn-subtitle">Use the navigation on the left to switch between dashboard panels. Actions below pull directly from WooCommerce so data is always current.</p>
+        </header>
+        <div class="kdn-animate">
+            <!-- WooCommerce Shortcode -->
+            <div class="woocommerce-shortcode">[woocommerce_my_account]</div>
+        </div>
+    </div>
+</section>
+
+<section id="dashboard-rewards" class="kdn-section" aria-labelledby="rewards-title">
+    <div class="kdn-container">
+        <div class="kdn-grid kdn-grid--2" style="align-items:center;">
+            <div class="kdn-animate">
+                <span class="kdn-pill">Loyalty Program</span>
+                <h2 id="rewards-title" class="kdn-title">The Legend Tier System</h2>
+                <p class="kdn-subtitle">Collect points every time you suit up in CEBASTIAN. Redeem them for exclusive experiences and secret drops.</p>
+                <ul class="kdn-card__text" style="margin-top:1.5rem; list-style:none; padding:0; display:grid; gap:0.75rem;">
+                    <li>• 1 point per $1 spent. 500 points unlocks free express shipping for a year.</li>
+                    <li>• 750 points grants access to quarterly mystery drops.</li>
+                    <li>• 1200 points elevates you to the Aurora Circle with custom tailoring sessions.</li>
+                </ul>
+            </div>
+            <div class="kdn-card kdn-animate">
+                <h3 class="kdn-card__title">Upcoming Member Events</h3>
+                <ul class="kdn-card__text" style="list-style:none; padding:0; display:grid; gap:0.75rem;">
+                    <li><strong>July 18:</strong> Virtual tour of the Aurora Reign atelier.</li>
+                    <li><strong>August 05:</strong> Community design workshop hosted in Brooklyn.</li>
+                    <li><strong>September 09:</strong> Sneak peek of the Equinox Echo capsule.</li>
+                </ul>
+                <a class="kdn-btn kdn-btn--outline" href="/contact/">RSVP with Concierge</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="dashboard-orders" class="kdn-section kdn-section--featured" aria-labelledby="orders-help-title">
+    <div class="kdn-container">
+        <div class="kdn-grid kdn-grid--2" style="align-items:center;">
+            <div class="kdn-card kdn-animate" style="background:rgba(255,255,255,0.08);">
+                <h2 id="orders-help-title" class="kdn-card__title">Need Help with an Order?</h2>
+                <p class="kdn-card__text">Our support team can expedite changes within two hours of purchase. Use the customer support portal for urgent requests.</p>
+                <a class="kdn-btn kdn-btn--primary" href="mailto:support@cebastianco.com">Email Support</a>
+            </div>
+            <div class="kdn-animate">
+                <div class="kdn-card">
+                    <h3 class="kdn-card__title">Quick Links</h3>
+                    <ul class="kdn-card__text" style="list-style:none; padding:0; display:grid; gap:0.75rem;">
+                        <li><a href="/contact/">Request a return label</a></li>
+                        <li><a href="/shop/">Browse restocks</a></li>
+                        <li><a href="/about/#sustainability">Review care &amp; repair program</a></li>
+                    </ul>
+                </div>
+                <div class="kdn-card kdn-animate" id="dashboard-details" style="margin-top:1.5rem;">
+                    <h3 class="kdn-card__title">Profile Checklist</h3>
+                    <ul class="kdn-card__text" style="list-style:none; padding:0; display:grid; gap:0.75rem;">
+                        <li>☑ Add a default shipping address.</li>
+                        <li>☑ Save your preferred payment method.</li>
+                        <li>☑ Select your fit preference for tailored recommendations.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
