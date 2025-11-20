@@ -59,7 +59,7 @@
             setTimeout(() => {
                 submitBtn.textContent = 'Subscribed!';
                 submitBtn.classList.add('is-success');
-                if (status) {
+                if (status && emailField) {
                     status.textContent = `Subscribed with ${emailField.value}`;
                 }
 
